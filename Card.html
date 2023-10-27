@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML CARD</title>
+    <style>
+        :root {
+            --primeColor: #000000b7;
+            --btnColor: #d50a0abd;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card {
+            width: 30vw;
+            height: 90vh;
+            margin: auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: var(--primeColor);
+            padding: 20px;
+        }
+
+        .cardBody {
+            background: #f2e5aa;
+            border-radius: 24px;
+        }
+        .ImgSet{
+            overflow: hidden;
+            border-radius: 24px 24px 0 0;
+        }
+        .img {
+            cursor: pointer;
+            transition: ease-in-out .4s;
+        }
+        .img:hover {
+            transform: scale(1.2);
+            transition: ease-in-out .4s;
+        }
+
+        .cardText {
+            padding: 20px;
+        }
+
+        .buttons {
+            display: flex;
+        }
+
+        .buttons>button {
+            margin-right: 20px;
+            padding: 5px 15px;
+            border-radius: 10px;
+            border: none;
+            cursor: pointer;
+            background-color: #ffffffd3;
+            font-weight: bold;
+
+        }
+
+        p {
+            font-family: sans-serif;
+            padding: 10px 0;
+            font-size: 1.1rem;
+        }
+
+        .centerBtn {
+            display: flex;
+            justify-content: center;
+            margin: 10px 0;
+        }
+
+        .centerBtn > button {
+            --primeColor: #fff;
+            color: var(--primeColor);
+            background-color: var(--btnColor);
+            padding: 15px 40px;
+            border: none;
+            cursor: pointer;
+            border-radius: 24px;
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="card">
+        <div class="cardBody">
+            <div class="ImgSet">
+                <img class="img" src="https://cdn.pixabay.com/photo/2015/04/23/22/00/tree-736885_1280.jpg" width="100%"
+                    alt="" srcset="">
+            </div>
+            <div class="cardText">
+                <div class="buttons">
+                    <button>Leo</button>
+                    <button>Beauty</button>
+                    <button>Puffle</button>
+                </div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non perspiciatis doloremque nihil deserunt
+                    dolorem sequi ut ipsa vel quod libero.</p>
+                <div class="centerBtn">
+                    <button>Check Out</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</body>
+
+</html>
